@@ -17,7 +17,7 @@ public class FacebookPage {
     @FindBy(id="pass")
     public WebElement sifreKutusu;
 
-    @FindBy(name="name")
+    @FindBy(name="login")
     public WebElement loginKutusu;
 
     @FindBy(className="_9ay7")
