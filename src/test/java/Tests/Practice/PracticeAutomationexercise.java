@@ -28,8 +28,8 @@ public class PracticeAutomationexercise {
         softAssert.assertTrue(autoTestPage.enterAccountInformationText.isDisplayed());
 
         autoTestPage.mrTitleRatioBox.click();
-        autoTestPage.passwordBoxEnterAccountInformation
-                .sendKeys("123456"+ Keys.TAB)+"23"+;
+//        autoTestPage.passwordBoxEnterAccountInformation
+//                .sendKeys("123456"+ Keys.TAB)+"23"+;
 
 
 
