@@ -8,8 +8,7 @@ import utilies.Driver;
 public class SauceDemoPage {
 
     public SauceDemoPage() {
-        PageFactory.initElements(Driver.getDriver(), this
-        );
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//input[@placeholder='Username']")
