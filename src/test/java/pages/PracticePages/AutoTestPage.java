@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilies.Driver;
 
+import javax.security.auth.x500.X500Principal;
+
 public class AutoTestPage {
 
     public AutoTestPage() {
@@ -37,6 +39,27 @@ public class AutoTestPage {
 
     @FindBy (xpath = "//input[@data-qa='password']")
     public WebElement passwordBoxEnterAccountInformation;
+
+    @FindBy(id ="country")
+    public WebElement loginCountryDropBox;
+
+    @FindBy(xpath = "//*[@data-qa='create-account']")
+    public WebElement signInCreateAccoutButton;
+
+    @FindBy(xpath = "//*[text()='Account Created!']")
+    public WebElement accountCreatedText;
+
+    @FindBy(xpath = "//*[@data-qa='continue-button']")
+    public WebElement accountCreatedContinueButton;
+
+    @FindBy(xpath = "//*[@class='fa fa-user']")
+    public WebElement loggedInAsUserText;
+
+    @FindBy(xpath = "//*[text()=' Delete Account']")
+    public WebElement deleteAccountButton;
+
+    @FindBy (xpath = "//*[text()='Delete']")
+    public WebElement deleteConfirmationBox;
 
 
 
