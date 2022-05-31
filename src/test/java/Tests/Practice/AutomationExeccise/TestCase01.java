@@ -22,7 +22,7 @@ public class TestCase01 {
         Driver.getDriver().get("http://automationexercise.com/");
 
         softAssert.assertTrue(autoTestPage.homePageButton.isDisplayed());
-        autoTestPage.signinLoginButton.click();
+        autoTestPage.signupLoginButton.click();
         softAssert.assertTrue(autoTestPage.newUserSignup.isDisplayed());
         autoTestPage.logInNameBox.sendKeys("hasan");
         autoTestPage.logInEmailBox.sendKeys("hasan111@asdf.com");

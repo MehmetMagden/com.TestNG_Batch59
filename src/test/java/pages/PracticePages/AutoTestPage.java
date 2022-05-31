@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilies.Driver;
 
-import javax.security.auth.x500.X500Principal;
-
 public class AutoTestPage {
 
     public AutoTestPage() {
@@ -17,7 +15,7 @@ public class AutoTestPage {
     public WebElement homePageButton;
 
     @FindBy(xpath= "//i[@class='fa fa-lock']")
-    public WebElement signinLoginButton;
+    public WebElement signupLoginButton;
 
     @FindBy(xpath = "//*[text()='New User Signup!']")
     public WebElement newUserSignup;
@@ -76,4 +74,9 @@ public class AutoTestPage {
     @FindBy(xpath = "//*[text()='Are you sure you want to delete this Delete Account?']")
     public WebElement areYouSureYouWantToDeleteThisAccountText;
 
+    @FindBy (xpath = "//*[text()='Your email or password is incorrect!']")
+    public WebElement yourEmailOrPasswordIsIncorrectText;
+
+    @FindBy (xpath = "//*[text()=' Logout']")
+    public WebElement logOutButton;
 }
