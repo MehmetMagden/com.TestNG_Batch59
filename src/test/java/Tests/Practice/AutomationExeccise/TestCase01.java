@@ -23,10 +23,10 @@ public class TestCase01 {
 
         softAssert.assertTrue(autoTestPage.homePageButton.isDisplayed());
         autoTestPage.signupLoginButton.click();
-        softAssert.assertTrue(autoTestPage.newUserSignup.isDisplayed());
+        softAssert.assertTrue(autoTestPage.newUserSignupText.isDisplayed());
         autoTestPage.logInNameBox.sendKeys("hasan");
         autoTestPage.logInEmailBox.sendKeys("hasan111@asdf.com");
-        autoTestPage.logInSignInButton.click();
+        autoTestPage.logInSignUpButton.click();
 
         softAssert.assertTrue(autoTestPage.enterAccountInformationText.isDisplayed());
 

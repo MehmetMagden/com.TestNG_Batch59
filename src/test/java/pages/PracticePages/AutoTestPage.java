@@ -18,7 +18,7 @@ public class AutoTestPage {
     public WebElement signupLoginButton;
 
     @FindBy(xpath = "//*[text()='New User Signup!']")
-    public WebElement newUserSignup;
+    public WebElement newUserSignupText;
 
     @FindBy (xpath = "//*[@data-qa='signup-name']")
     public WebElement logInNameBox;
@@ -27,7 +27,7 @@ public class AutoTestPage {
     public WebElement logInEmailBox;
 
     @FindBy(xpath = "//*[@data-qa='signup-button']")
-    public WebElement logInSignInButton;
+    public WebElement logInSignUpButton;
 
     @FindBy(xpath = "//*[text()='Enter Account Information']")
     public WebElement enterAccountInformationText;
@@ -79,4 +79,28 @@ public class AutoTestPage {
 
     @FindBy (xpath = "//*[text()=' Logout']")
     public WebElement logOutButton;
+
+    @FindBy(xpath = "//*[text()='Email Address already exist!']")
+    public WebElement emailAddressAlreadExistText;
+
+    @FindBy(xpath = "//*[text()=' Contact us']")
+    public WebElement contactUsButton;
+
+    @FindBy(xpath = "//*[text()='Get In Touch']")
+    public WebElement getInTouchText;
+
+    @FindBy(xpath = "//input[@data-qa='name']")
+    public WebElement contactUsNameBox;
+
+    @FindBy(xpath = "//input[@name='upload_file']")
+    public WebElement contactUsChooseFileButton;
+
+    @FindBy(xpath = "//input[@data-qa='submit-button']")
+    public WebElement contactUsSubmitButton;
+
+    @FindBy(xpath = "//div[@class='status alert alert-success']")
+    public WebElement contactUsSuccesYourDetailsHaveBeenSubmittedSuccesfullyText;
+
+    @FindBy(xpath = "//a[@class='btn btn-success']")
+    public WebElement contactUsHomePageReturnButton;
 }
