@@ -1,4 +1,4 @@
-package Tests.Practice;
+package Tests.Practice.AutomationExeccise;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 import pages.PracticePages.AutoTestPage;
 import utilies.Driver;
 
-public class PracticeAutomationexercise {
+public class TestCase01 {
 
 
     @Test
