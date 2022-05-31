@@ -61,7 +61,19 @@ public class AutoTestPage {
     @FindBy (xpath = "//*[text()='Delete']")
     public WebElement deleteConfirmationBox;
 
+    @FindBy (xpath = "//*[text()='Login to your account']")
+    public WebElement loginToYourAccountText;
 
+    @FindBy (xpath = "//input[@data-qa='login-email']")
+    public WebElement loginToYourAccountMailBox;
 
+    @FindBy (xpath = "//input[@data-qa='login-password']")
+    public WebElement loginToYourAccountPasswordBox;
+
+    @FindBy(xpath = "//button[@data-qa='login-button']")
+    public WebElement loginToYourAccountLoginButton;
+
+    @FindBy(xpath = "//*[text()='Are you sure you want to delete this Delete Account?']")
+    public WebElement areYouSureYouWantToDeleteThisAccountText;
 
 }
