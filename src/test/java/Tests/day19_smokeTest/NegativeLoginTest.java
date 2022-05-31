@@ -6,12 +6,12 @@ import pages.BrcPage;
 import utilies.ConfigReader;
 import utilies.Driver;
 
-public class PozitifLoginTest {
-
+public class NegativeLoginTest {
     BrcPage brcPage = new BrcPage();
 
     @Test
-    public void test01() {
+    public void yanlisSifre() {
+
         // Bir test method olustur positiveLoginTest()
         //       https://www.bluerentalcars.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
@@ -20,18 +20,21 @@ public class PozitifLoginTest {
 
         //test data user email: customer@bluerentalcars.com ,
         brcPage.emailTextBox.sendKeys(ConfigReader.getProperty("brcValidEmail"));
-        //test data password : 12345
-        brcPage.passwordTextBox.sendKeys(ConfigReader.getProperty("brcValidPassword"));
+        //test data password : 54321
+        brcPage.passwordTextBox.sendKeys(ConfigReader.getProperty("brcWrongdPassword"));
         //goin buttonuna tıklayın
         brcPage.ikinciLoginButtonu.click();
-        //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
+        //Degerleri girildiginde sayfaya basarili sekilde girilemediğini test et
 
-        String actualUserName=brcPage.kullaniciProfilIsmi.getText();
-        String expectedUserName = ConfigReader.getProperty("brcValidUserName");
-
-        Assert.assertEquals(actualUserName,expectedUserName);
+        Assert.assertTrue(brcPage.ikinciLoginButtonu.isDisplayed());
 
         Driver.closeDriver();
+
+        /*
+        otel ile ilgili olanı yapın
+
+
+         */
 
 
     }
