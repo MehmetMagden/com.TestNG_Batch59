@@ -8,11 +8,11 @@ import utilies.Driver;
 
 public class NegativeLoginTestYanlisPasswordVeYanlisKullaniciAdi {
 
-    BrcPage brcPage = new BrcPage();
+    BrcPage brcPage ;
 
     @Test
     public void yanlisSifreVeKullaniciAdi() {
-
+        brcPage= new BrcPage();
         // Bir test method olustur positiveLoginTest()
         //       https://www.bluerentalcars.com/ adresine git
         Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
