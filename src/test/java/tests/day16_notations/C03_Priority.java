@@ -29,7 +29,7 @@ public class C03_Priority extends TestBase {
         System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
     }
 
-    @Test
+    @Test(groups = "grup1")
     public void TechproedTest() {
         driver.get("https://www.techproeducation.com");
         System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());

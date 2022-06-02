@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="belirli guruplar">
+
+    <!--
+    xml dosyalar çalıştıracağımız suite, test veya diğer seçenekleri bir göreve göre guruplandırma için
+    de kullanılabilir
+
+    bu durumda çalışacak tüm test method'larını veya class'ları tek tek xml dosyasına tanımlamak yerine
+    framework'umuzde istediğimiz test method'larını
+    istediğimiz guruplara dahil edebiliriz.
+
+    bunu yapabilmek için önce test method'larımızı istediğimiz guruplara dahil eder
+    sonra exm dosyasında
+        1- hangi guruplar çalışacak veya çalışmayacak
+        2- bu guruplar hangi package altında aranacak
+    -->
+
+    <test name="belirli guruplar">
+        <groups>
+            <run>
+                <exclude name="grup1"></exclude>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day16_notations"></package>
+           <package name="tests.day17_pom"></package>
+        </packages>
+    </test>
+</suite>

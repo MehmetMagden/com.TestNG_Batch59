@@ -10,7 +10,7 @@ import utilies.TestBase;
 public class C06_SoftAssert extends TestBase {
 
 
-    @Test
+    @Test(groups = "grup2")
     public void test01() {
         /*
         soft assertion baslangic ve bitiş satırları arasındaki tüm assertion ları yapıp. bitiş satırına geldiğinde
