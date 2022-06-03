@@ -20,14 +20,14 @@ public class C05_Assertions extends TestBase {
         String actualTitle = driver.getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
         //arama kutusuna erişebiliyor muyuz
-        WebElement aramaKutusu = driver.findElement(By.id("twotabsearchbox"));
+        WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
         //nutella arat
         aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
         //arama yapıldığını test et
         WebElement sonucYaziElementi = driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         Assert.assertTrue(sonucYaziElementi.isDisplayed());
         //arama sonuuc nutella içeriyormu test
-        Assert.assertTrue(sonucYaziElementi.getText().contains("nutella"));
+        Assert.assertTrue(sonucYaziElementi.getText().contains("Nutella"));
 
 
     }
