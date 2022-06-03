@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilies.Driver;
 
+import java.util.List;
+
 public class AutoTestPage {
 
     public AutoTestPage() {
@@ -103,4 +105,13 @@ public class AutoTestPage {
 
     @FindBy(xpath = "//a[@class='btn btn-success']")
     public WebElement contactUsHomePageReturnButton;
+
+    @FindBy(xpath = "//button[text()='Test Cases']")
+    public WebElement hompePageTestCasesButton;
+
+    @FindBy (xpath = "//a[text()=' Products']")
+    public WebElement homePageProductsButton;
+
+    @FindBy(xpath = "//div[@class='col-sm-4']")
+    public List<WebElement> productPageProductList;
 }

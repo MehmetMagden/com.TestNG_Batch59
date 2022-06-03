@@ -16,7 +16,7 @@ public class C05_Assertions extends TestBase {
         driver.get("https://www.amazon.com");
 
         //title amazon mu
-        String expectedTitle = "amazon";
+        String expectedTitle = "Amazon";
         String actualTitle = driver.getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
         //arama kutusuna erişebiliyor muyuz
