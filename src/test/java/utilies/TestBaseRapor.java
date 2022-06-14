@@ -6,8 +6,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import utilies.ConfigReader;
-import utilies.Driver;
+import utilities.ReusableMethods1;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -38,7 +37,7 @@ public abstract class TestBaseRapor {
     @AfterMethod(alwaysRun = true)
     public void tearDownMethod(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) { // eğer testin sonucu başarısızsa
-            String screenshotLocation = utilities.ReusableMethods.getScreenshot(result.getName());
+            String screenshotLocation = ReusableMethods1.getScreenshot(result.getName());
             extentTest.fail(result.getName());
             extentTest.addScreenCaptureFromPath(screenshotLocation);
             extentTest.fail(result.getThrowable());

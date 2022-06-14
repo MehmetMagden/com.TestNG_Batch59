@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilies.Driver;
+import utilities.ReusableMethods1;
 
 import java.util.Set;
 
@@ -47,7 +48,7 @@ public class C01_WindowHandleReusableMethod {
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
         //● Click Here butonuna basın.
         Driver.getDriver().findElement(By.linkText("Click Here")).click();
-        utilities.ReusableMethods.switchToWindow("New Window");
+        ReusableMethods1.switchToWindow("New Window");
 
         String expectedTitle = "New Window";
         String actuelTitle =Driver.getDriver().getTitle();
